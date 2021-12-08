@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
+import { ModalAddFood } from "../../components/ModalAddFood";
+import { ModalEditFood } from "../../components/ModalEditFood";
+import { Food } from "../../components/Food";
 import api from "../../services/api";
-import Food from "../../components/Food";
-import ModalAddFood from "../../components/ModalAddFood";
-import ModalEditFood from "../../components/ModalEditFood";
+
 import { FoodsContainer } from "./styles";
 
 interface IFood {
@@ -23,7 +23,7 @@ interface AddFood {
   description: string;
 }
 
-export default function Dashboard() {
+export function Dashboard() {
   const [foods, setFoods] = useState<IFood[]>([]);
   const [editingFood, setEditingFood] = useState<IFood>({} as IFood);
   const [modalOpen, setModalOpen] = useState(false);

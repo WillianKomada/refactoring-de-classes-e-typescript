@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import { FiCheckSquare } from "react-icons/fi";
+import { FormHandles } from "@unform/core";
+import { Modal } from "../Modal";
+import { Input } from "../Input";
 
 import { Form } from "./styles";
-import Modal from "../Modal";
-import Input from "../Input";
-import { FormHandles } from "@unform/core";
 
 interface IFood {
   id: number;
@@ -29,7 +29,7 @@ interface ModalEditFoodProps {
   handleUpdateFood: (data: AddFood) => void;
 }
 
-export default function ModalEditFood({
+export function ModalEditFood({
   isOpen,
   setIsOpen,
   editingFood,

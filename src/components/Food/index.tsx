@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FiEdit3, FiTrash } from "react-icons/fi";
+import api from "../../services/api";
 
 import { Container } from "./styles";
-import api from "../../services/api";
 
 interface IFood {
   id: number;
@@ -19,11 +19,7 @@ interface FoodProps {
   handleDelete: (id: number) => void;
 }
 
-export default function Food({
-  food,
-  handleEditFood,
-  handleDelete,
-}: FoodProps) {
+export function Food({ food, handleEditFood, handleDelete }: FoodProps) {
   const { available } = food;
   const [isAvailable, setIsAvailable] = useState(available);
 

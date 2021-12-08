@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
-
 import { useField } from "@unform/core";
+import { IconBaseProps } from "react-icons";
 
 import { Container } from "./styles";
-import { IconBaseProps } from "react-icons";
 
 interface InputProps {
   name: string;
@@ -11,7 +10,7 @@ interface InputProps {
   icon?: React.ComponentType<IconBaseProps>;
 }
 
-export default function Input({ name, icon: Icon, ...rest }: InputProps) {
+export function Input({ name, icon: Icon, ...rest }: InputProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [isFocused, setIsFocused] = useState(false);

@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { FormHandles } from "@unform/core";
 import { FiCheckSquare } from "react-icons/fi";
+import { Input } from "../Input";
+import { Modal } from "../Modal";
 
-import Input from "../Input";
-import Modal from "../Modal";
 import { Form } from "./styles";
 
 interface AddFood {
@@ -19,7 +19,7 @@ interface ModalAddFoodProps {
   handleAddFood: (data: AddFood) => void;
 }
 
-export default function ModalAddFood({
+export function ModalAddFood({
   isOpen,
   setIsOpen,
   handleAddFood,
