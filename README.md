@@ -8,7 +8,7 @@
 ## 📝 Sobre
 
 <p>
-  Desafio em refactoring de classes e typescript referente ao Chapter II. A aplicação se trata de um restaurante online que disponibiliza seu cardápio. Em seu desenvolvimento a seguinte tarefa foi transformar a aplicação de Class Component e javascript para Function Component e typescript, na sua estilização utilizando Styled Component. 🚀🔥
+  Desafio 04 - em refactoring de classes e typescript referente ao Chapter II. A aplicação se trata de um restaurante online que disponibiliza seu cardápio. Em seu desenvolvimento a seguinte tarefa foi transformar a aplicação de Class Component e javascript para Function Component e typescript, na sua estilização utilizando Styled Component. 🚀🔥
 </p>
 
 ---
